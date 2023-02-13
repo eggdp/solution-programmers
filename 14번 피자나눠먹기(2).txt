@@ -1,0 +1,15 @@
+//let i=0 같이 반복조건을 줘야할 땐 for가 더 가독성이 좋은데 반복조건을 따로 만들어줄 필요 없을 땐 while이 더 가독성 좋은 것 같습니다
+
+//실무에선 다 팀바이팀이겠지만 while, for 둘다 지양하고 배열메소드를 써서 가독성, 유지보수성 더 좋게 짜고 있어요!
+
+function solution(n) {
+    var answer = 0;
+    let pizzaCount =1;
+    while(true){
+        if(pizzaCount * 6 % n=== 0){
+            return pizzaCount;
+        }
+        pizzaCount = pizzaCount +1;
+    }
+    return answer;
+}
