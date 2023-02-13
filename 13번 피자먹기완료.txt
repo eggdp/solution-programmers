@@ -1,0 +1,7 @@
+// 정수(1~7)까지 를 7로 나누면 = 몫(0.xx~ 1) 올림을 해주면 된다. Math.ceil();
+
+function solution(n) {
+    const answer = Math.ceil(n / 7);
+    return answer;
+    
+}

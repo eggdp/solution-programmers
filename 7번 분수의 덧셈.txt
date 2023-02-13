@@ -1,0 +1,28 @@
+// 1.분자 / 분모의 덧셈
+// 2.분자,분모의 최대공약수로 나눠줌
+// 3.분자 분모중 작은 수 찾기
+// 4.둘다 나누어 떨어지면 그수가 최대공약수 
+// 5. 안나누어 떨어지면 -1하고 4로 돌아가기.
+
+function solution(denom1,numer1,denom2,numer2){
+    const denum = denom1*numer2 + denom2*numer1;
+    const num   = numer1*numer2;
+    
+    //작은수 찾기
+    let minNum;
+    if(denum<num){
+        minNum = denum;
+    }else{
+        minNum = num;
+    }
+    
+    // 최대공약수 찾기 나누기%
+    while(true){
+        if(denum % minNum === 0 ){
+            if(num % minNum === 0){
+            return [denum / minNum , num / minNum];
+              }
+        }
+    minNum = minNum - 1;
+        }
+}
