@@ -1,0 +1,5 @@
+function solution(age) {
+    
+    let born = 2022 - age + 1;
+    return born;
+}
