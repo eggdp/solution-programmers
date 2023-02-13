@@ -1,0 +1,6 @@
+function solution(money) {
+    var coffeeCnt = Math.floor(money / 5500);
+    const leftMoney = money % 5500; 
+    return [coffeeCnt , leftMoney];
+    
+}

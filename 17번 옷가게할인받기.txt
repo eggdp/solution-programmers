@@ -1,0 +1,21 @@
+function solution(price) {
+    // 100,000 <= price < 300,000 5% 할인 
+     if( 500000 <= price){
+        return Math.floor(price * 0.8);
+    }
+    if( 300000 <= price){
+        return Math.floor(price * 0.9);
+    }
+    if( 100000 <= price){
+        return Math.floor(price * 0.95);
+    }
+     
+    
+    return price;
+}
+
+
+
+
+
+// 순서를 바꾸어줘야한다. 그래야 더큰 수가 먼저걸리지않음.

@@ -1,0 +1,11 @@
+function solution(numbers) {
+    let sum = 0;
+    let cnt = 0;
+    
+    //numbers + 원소의 합 /numbers.length
+    while(cnt < numbers.length){
+        sum = sum + numbers[cnt];
+        cnt = cnt + 1;
+    }
+    return sum / numbers.length ;
+}
