@@ -1,0 +1,10 @@
+// 1. 새로 넣는 곳은 배열이 아니다. ['j','a']...이런식으로들어가므로 ''로 해주어야함
+
+function solution(my_string) {
+    let newArray ='';
+    let cnt = my_string.length - 1;
+    while(0 <= cnt){
+        newArray += my_string[cnt];
+        cnt = cnt - 1;
+    }return newArray;
+}

@@ -1,0 +1,16 @@
+// 너무 어렵게 접근하지말자.
+
+function solution(num_list){
+    let odd = 0; //홀수 
+    let even = 0; //짝수
+    let cnt = 0;
+    while(cnt < num_list.length){
+        if(num_list[cnt]%2===0){
+            even = even + 1;
+        }else{
+            odd = odd + 1;
+        }
+        cnt = cnt + 1;
+    }
+    return [even , odd];
+}

@@ -1,0 +1,20 @@
+//1. 새로 담을 배열만들고 2. 꺼꾸로 빼서 넣기 
+function solution(num_list){
+    let cnt = num_list.length - 1;
+    let newArray = [];
+    
+    while(0 <= cnt){
+        newArray.push(num_list[cnt]);
+        cnt = cnt - 1;
+    }
+    return newArray;
+}
+
+
+javascript reverse 사용
+
+
+// function solution(num_list){
+//     return num_list.reverse();
+    
+// }
