@@ -1,0 +1,7 @@
+function solution(n, k) {
+    //만약 양꼬치가 10의 배수이면 음료수값 - 2000*10의배
+    // n = 양꼬치 k = 음료수
+    let s = Math.floor(n / 10);
+    console.log(s);
+    return (n*12000 + k*2000)-s*2000;
+    }
