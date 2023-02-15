@@ -1,0 +1,13 @@
+//1 만약 my_string에 letter 가 포함되있다면 제거 
+function solution(my_string, letter) {
+    let cnt = 0;
+    let newChar ='';
+    
+    while(cnt < my_string.length){
+        if(my_string[cnt] !== letter){
+        newChar += my_string[cnt];
+        }
+        cnt = cnt + 1;
+    }
+    return newChar;
+}
